@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rush Grill</title>
+  </head>
+  <body>
+    <!-- partie de nav bar -->
+    <nav
+      class="navbar navbar-expand-lg bg-black"
+      data-bs-theme="dark"
+      id="Accueil"
+    >
+      <div class="container-fluid">
+        <!-- logo -->
+        <img
+          class="navbar-brand"
+          src="./images/logo.png"
+          alt="Rush Grill"
+          width="100"
+          height="80"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Accueil"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#apropos">A Propos de Nous</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- section hero -->
+    <section
+      class="hero d-flex justify-content-center align-items-center position-relative"
+    >
+      <div class="text-center">
+        <img
+          class="img-responsive wow fadeIn animated"
+          src="./images/cover.jpg"
+          alt="Grill"
+        />
+        <div
+          class="containerimage position-absolute top-50 start-50 translate-middle"
+        >
+          <h1 class="text-warning fw-bold">Bienvenue au Restaurant</h1>
+          <p class="text-light fw-bold">Venez découvrir nos plats délicieux</p>
+          <a href="#menu"
+            ><button type="button" class="btn btn-primary">Voir le Menu</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- section Menu -->
+    <section id="menu" class="container text-center mt-4">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <img
+              src="./images/plat1.jpg"
+              class="card-img-top"
+              alt="Shish Kebab"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Shish Kebab</h5>
+              <p class="card-text">
+                Brochettes de viande grillée accompagnés de légumes frais et des
+                frites servis avec du pain
+              </p>
+              <p class="card-text fw-bold">18.00 €</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <img
+              src="./images/plat2.jpg"
+              class="card-img-top"
+              alt="Escalope grill"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Escalope Grille</h5>
+              <p class="card-text">
+                Escalope tendre grillée à la perfection, servie avec des légumes
+                frais et du riz pilaf ou des frites maison pour un plat léger et
+                savoureux.
+              </p>
+              <p class="card-text fw-bold">15.00 €</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <img
+              src="./images/plat3.jpg"
+              class="card-img-top"
+              alt="crevette Grille"
+            />
+            <div class="card-body">
+              <h5 class="card-title">crevette grille</h5>
+              <p class="card-text">
+                Savourez des crevettes juteuses, délicatement grillées pour
+                révéler toute leur saveur naturelle
+              </p>
+              <p class="card-text fw-bold">20.00 €</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- a propos de nous  -->
+    <section id="apropos ">
+      <div class="container text-center pt-4">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./images/rush.jpg" alt="restaurant" />
+          </div>
+          <div class="col-md-6">
+            <h2>A Propos de Nous</h2>
+            <p>
+              Bienvenue chez Rush Grill, un lieu où la passion de la cuisine
+              rencontre l'excellence du grill ! Situé au cœur de Alger, notre
+              restaurant est spécialisé dans des plats savoureux, préparés avec
+              des ingrédients frais et de qualité.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section Contact -->
+    <section id="Contact" class="d-flex justify-content-center mt-4 mb-4">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Name : </label>
+          <input type="text" class="form-control" id="exampleInputName" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email: </label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="floatingTextarea">Message:</label>
+          <textarea
+            class="form-control"
+            placeholder="Enter your message"
+            id="floatingTextarea"
+          ></textarea>
+        </div>
+
+        <center>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </center>
+      </form>
+      <!-- pied de la page -->
+    </section>
+    <footer class="bg-black text-center text-light mb-0">
+      <p>&copy; 2024 Rush Grill. Tous droits réservés.</p>
+
+      <i class="bi bi-facebook text-light mt-0"></i>
+      <i class="bi bi-twitter text-light"></i>
+      <i class="bi bi-instagram text-light"></i>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
